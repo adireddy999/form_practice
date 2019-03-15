@@ -8,22 +8,37 @@
         <form id = "sample_form">
             <fieldset>
                 <label for="first">first name </label>
-                <input type="text" name = "text" placeholder="enter First Name" minlength="3" required/>
+                <input type="text" name = "first" placeholder="enter First Name" minlength="3" required/>
             </fieldset>
             <fieldset>
                 <label for="last">last name </label>
-                <input type="text" name = "text" placeholder="enter Last Name" minlength="3"required/>
+                <input type="text" name = "last" placeholder="enter Last Name" minlength="3"required/>
             </fieldset>
             <fieldset>
-                <label for="currently enrolled"> enrolled at cf? </label>
-                <input type="radio" name="currently enrolled" value= "enrolled"/>
+                <label for="enrolled"> enrolled at cf? </label>
+                <input type="checkbox" name="enrolled" value= "enrolled"/>
             </fieldset>
             <fieldset>
                 <label for="future_enrolled"> Interested in taking more classes </label>
-                <input type="radio" name="future_classes" value='yes'/>yes
-                <input type="radio" name="future_classes" value='yes'/>No
+                <input type="radio" name="future_enrolled" value='yes'/>yes
+                <input type="radio" name="future_enrolled" value='yes'/>No
             </fieldset>
             <button id="submit_button" type="submit">add student</button>
+            <section>
+                <table>
+                    <thead>
+                        <th> First Name</th>
+                        <th> Last Name</th>
+                        <th> enrolled</th>
+                        <th> interested in furture stuff?</th>
+                    </thead>
+                    <tbody id="student_table">
+                        <!---Dynamically -->
+                    </tbody>
+                </table>
+                <script src="app.js"></script>
+            </section>
+            
         </form>
     </body>
 </html>
