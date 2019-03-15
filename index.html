@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href ="reset.css"/>
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+    <body>
+        <form id = "sample_form">
+            <fieldset>
+                <label for="first">first name </label>
+                <input type="text" name = "text" placeholder="enter First Name" minlength="3" required/>
+            </fieldset>
+            <fieldset>
+                <label for="last">last name </label>
+                <input type="text" name = "text" placeholder="enter Last Name" minlength="3"required/>
+            </fieldset>
+            <fieldset>
+                <label for="currently enrolled"> enrolled at cf? </label>
+                <input type="radio" name="currently enrolled" value= "enrolled"/>
+            </fieldset>
+            <fieldset>
+                <label for="future_enrolled"> Interested in taking more classes </label>
+                <input type="radio" name="future_classes" value='yes'/>yes
+                <input type="radio" name="future_classes" value='yes'/>No
+            </fieldset>
+            <button id="submit_button" type="submit">add student</button>
+        </form>
+    </body>
+</html>
